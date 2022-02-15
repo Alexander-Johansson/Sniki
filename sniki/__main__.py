@@ -1,6 +1,6 @@
 import pygame, sys
-from settings import *
-from level import Level
+from .settings import *
+from .level import Level
 
 class Game:
     def __init__(self):
@@ -11,7 +11,7 @@ class Game:
         pygame.display.set_caption("Sniki")
         self.clock = pygame.time.Clock()
 
-        self.level = Level() 
+        self.level = Level()
 
     def run(self):
         while True:
